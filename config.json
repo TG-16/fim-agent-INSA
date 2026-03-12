@@ -1,0 +1,18 @@
+{
+  "opensearch_url": "https://localhost:9200/_bulk",
+  "opensearch_user": "admin",
+  "opensearch_pass": "Tg@0918800210",
+  "watch_paths": [
+    "C:\\Users\\HP\\Desktop",
+    "C:\\Users\\HP\\Documents",
+    "C:\\Users\\HP\\Downloads",
+    "C:\\Windows\\System32\\drivers\\etc"
+  ],
+  "index_name": "fim-alerts",
+  "ship_interval_sec": 0,
+  "log_level": 2,
+  "exclusions": [
+    "C:\\Users\\HP\\AppData",
+    "C:\\$Recycle.Bin"
+  ]
+}
