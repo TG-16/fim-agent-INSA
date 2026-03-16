@@ -11,6 +11,10 @@ import (
 )
 
 func main() {
+	RunApp(false)
+}
+
+func RunApp(testMode bool) {
 	// 1. Setup
 	appConfig = loadConfig()
 	ensureIndexExists()
@@ -47,6 +51,10 @@ func main() {
 	var timerMutex sync.Mutex
 
 	fmt.Printf("FIM Agent Active. Monitoring %d paths.\n", len(appConfig.WatchPaths))
+
+	if testMode {
+        return // Exit early so the test doesn't hang
+    }
 
 	// 4. Main Event Loop
 	for {
